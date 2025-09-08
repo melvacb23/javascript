@@ -32,4 +32,14 @@ const inicializarAlcancia=()=>{
     actualizarDatosInterfaz()
 }
 
+
 inicializarAlcancia()
+
+//  botón Romper
+document.querySelector("#btnRomper").addEventListener("click", () => {
+    alert("Rompiste la alcancía\nAhorro total: $" + miAlcancia.calcularTotalMonedas())
+
+    // Reiniciar alcancía
+    crearAlcancia()
+    actualizarDatosInterfaz()
+})
