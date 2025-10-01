@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validador de Contraseña</title>
+</head>
+<body>
+  <h2>Validador de Contraseña</h2>
+
+  <label>Contraseña:</label>
+  <input type="password" id="contrasena" placeholder="Mínimo 6 caracteres, 1 mayúscula y 1 número">
+  <button onclick="validarContrasena()">Validar</button>
+  <p id="resultadoContrasena"></p>
+
+  <button onclick="location.href='index.html'">Volver</button>
+
+  <script>
+    function validarContrasena() {
+      const valor = document.getElementById("contrasena").value;
+      const regex = /^(?=.*[A-Z])(?=.*[0-9]).{6,}$/;
+      document.getElementById("resultadoContrasena").textContent =
+        regex.test(valor)
+          ? "Contraseña válida"
+          : "Contraseña inválida (mínimo 6 caracteres, 1 mayúscula y 1 número)";
+    }
+  </script>
+</body>
+</html>

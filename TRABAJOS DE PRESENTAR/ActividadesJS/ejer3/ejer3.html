@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> Drag and Drop</title>
+  <link rel="stylesheet" href="ejer3.css">
+</head>
+<body>
+  <h2>EJEMPLO USO DRAG AND DROP TABLERO KANBAS</h2>
+
+  <div class="tablero">
+    <div class="columna" id="por-hacer">
+      <h3>Por hacer</h3>
+      <div class="tarea" draggable="true" id="tarea2">Ejercicio 2</div>
+      <div class="tarea" draggable="true" id="tarea3">Ejercicio 3</div>
+    </div>
+
+    <div class="columna" id="en-progreso">
+      <h3>En progreso</h3>
+      <div class="tarea" draggable="true" id="tarea1">Ejercicio 1</div>
+    </div>
+
+    <div class="columna" id="hecho">
+      <h3>Hecho</h3>
+    </div>
+  </div>
+
+  <script src="ejer3.js"></script>
+
+   <div style="margin-top:20px;">
+   <button onclick="window.location.href='../index.html'">Volver al menú</button>
+</body>
+</html>
